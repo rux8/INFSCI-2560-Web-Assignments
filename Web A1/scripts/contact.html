@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-
+strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/contact.css" type="text/css">
+</head>
+<body>
+
+<header>
+    <h2>Contact</h2>
+</header>
+
+<div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="interests.html">Interests</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <svg height="110" width="110">
+            <defs>
+                <filter id="f1" x="0" y="0">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="15" />
+                </filter>
+            </defs>
+            <rect width="90" height="90" stroke="green" stroke-width="3"
+                  fill="yellow" filter="url(#f1)" />
+        </svg>
+    </nav>
+</div>
+
+<div class="container">
+    <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <br><input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <br><label for="lname">Last Name</label>
+        <br><input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <br><label for="country">Country</label>
+        <br><select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="china">China</option>
+        </select>
+
+        <br><label for="subject">Subject</label>
+        <br><textarea id="subject" name="subject" placeholder="Write something.." style="height:120px"></textarea>
+
+        <input type="submit" value="Send">
+    </form>
+</div>
+
+</body>
+</html>
