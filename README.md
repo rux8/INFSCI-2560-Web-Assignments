@@ -1,3 +1,3 @@
-# Web-A1
+# Web-Assignments
 INFSCI 2560
 Flora Xiang
