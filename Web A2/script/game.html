@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css"></link>
+    <script src="../js/myScript.js"></script>
+    <title>Game of Thrones</title>
+</head>
+<body>
+<p class="p3">Character Names</p>
+<p id="myresult"></p>
+<script>
+    var names=["Arya Stark","Cersei Lannister", "Tyrion Lannister","John Snow","Daenerys Targaryen"];
+    document.getElementById("myresult").innerHTML = names[0]+", "+names[1]+", "+names[2]+", "+names[3]+", "+names[4];
+</script>-->
+<ol>
+    <div class="whole">
+        <div id = "1" class = "display">
+            <li class = "question">All men must die. How would you like to leave this world?
+                <ul>
+                    <li class = "question" val="1A" onclick="select(this,3)">Old and surrounded by my loved ones.</li>
+                    <li class = "question" val="1B" onclick="select(this,2)">Doing something exciting Like skydiving or running with the bulls.</li>
+                    <li class = "question" val="1C" onclick="select(this,5)">While I'm sleeping. Ideally, I'll never know what hit me.</li>
+                    <li class = "question" val="1D" onclick="select(this,2)">I'm too awesome to die.</li><p></p>
+                </ul>
+            </li>
+        </div>
+        <div id = "2" class = "nondisply">
+            <li class = "question">Do you have any secrets?
+                <ul>
+                    <li class = "question" val="2A" onclick="javascript:select(this,4)">Nope. What you see is what you get with me.</li>
+                    <li class = "question" val="2B" onclick="javascript:select(this,4)">Not really. Besides the really big one I don't want to talk about.</li>
+                    <li class = "question" val="2C" onclick="javascript:select(this,3)">Yeah, just a handful.</li>
+                    <li class = "question" val="2D" onclick="javascript:select(this,4)">I can barely keep track of all the secrets I have - about me, about other people, ect.</li><p></p>
+                </ul>
+            </li>
+        </div>
+        <div id = "3" class = "nondisply">
+            <li class = "question">Is the pen really more powerful than the sword?
+                <ul>
+                    <li class = "question" val="3A" onclick="javascript:select(this,6)">Yes, I can't agree more.</li>
+                    <li class = "question" val="3B" onclick="javascript:select(this,6)">Sometimes. It sort of depending on the situation.</li>
+                    <li class = "question" val="3C" onclick="javascript:select(this,4)">I don't know.</li>
+                    <li class = "question" val="3D" onclick="javascript:select(this,4)">Absolutely not.</li><p></p>
+                </ul>
+            </li>
+        </div>
+        <div id = "4" class = "nondisply">
+            <li class = "question">Your friends would describe you as?
+                <ul>
+                <li class = "question" val="4A" onclick="javascript:select(this,10)">Stubborn</li>
+                <li class = "question" val="4B" onclick="javascript:select(this,7)">Firey</li>
+                <li class = "question" val="4C" onclick="javascript:select(this,10)">Mischievous</li>
+                </li><p></p>
+                </ul>
+            </li>
+        </div>
+        <div id = "5" class = "nondisply">
+            <li class = "question">If you could be the star of your own movie, what sort of movie would it be?
+                <ul>
+                <li class = "question" val="5A" onclick="javascript:select(this,6)">A war story</li>
+                <li class = "question" val="5B" onclick="javascript:select(this,7)">A family drama</li>
+                <li class = "question" val="5C" onclick="javascript:select(this,8)">An adventure with a dash of romance</li>
+                <li class = "question" val="5D" onclick="javascript:select(this,6)">A revenge tale</li><p></p>
+                </ul>
+            </li>
+        </div>
+        <div id = "6" class = "nondisply">
+            <li class = "question">
+                Do you consider yourself a nice person?
+                <ul>
+                <li class = "question" val="6A" onclick="javascript:select(this,7)">No, being nice is overrated - and a sign of weakness.</li>
+                <li class = "question" val="6B" onclick="javascript:select(this,8)">Sometimes. I might've done a few nice things last week.</li>
+                <li class = "question" val="6C" onclick="javascript:select(this,10)">I try my best to be nice, but it doesn't always work out.</li>
+                <li class = "question" val="6D" onclick="javascript:select(this,10)">Yes, I'm a nice person.</li><p></p>
+                </ul>
+            </li>
+        </div>
+        <div id = "7" class = "nondisply">
+            <li class = "question">Your friends get you a new board game. What do you do before playing?<ul>
+                <li class = "question" val="7A" onclick="javascript:endtest5(this)">Nothing. I just wing it. That's the best way to learn.</li>
+                <!--<li class = "question" val="7B" onclick="javascript:select(this,9)">I study all the instructions.</li>-->
+                <li class = "question" val="7C" onclick="javascript:endtest2(this)">I just read the "How to Win" section.</li>
+                </li><p></p>
+            </ul></li>
+        </div>
+        <div id = "8" class = "nondisply">
+            <li class = "question">Imagine you get to take a field trip to Westeros. What's the one thing you have to bring with you?<ul>
+                <li class = "question" val="8A" onclick="javascript:endtest4(this)">A sword</li>
+                <!--<li class = "question" val="8B" onclick="javascript:select(this,9)">Maps and books about westeors.</li>-->
+                <li class = "question" val="8D" onclick="javascript:endtest2(this)">A bodyguard</li><p></p>
+            </ul></li>
+            <p id="myresult"></p>
+        </div>
+        <div id = "10" class = "nondisply">
+            <li class = "question">Be honest: How important would the Iron Throne be to you if you lived in Westeros?<ul>
+                <li class = "question" val="10B" onclick="javascript:endtest1(this)">I wouldn't be too concerned about it.</li>
+                <li class = "question" val="10C" onclick="javascript:endtest3(this)">I'd prefer to rule over my domain from a chair that didn't draw blood.</li>
+                </li><p></p>
+            </ul></li>
+        </div>
+    </div>
+</ol>
+</body>
+</html></html>

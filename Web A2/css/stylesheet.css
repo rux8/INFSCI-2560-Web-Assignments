@@ -1,0 +1,118 @@
+.nondisply {
+	display: none; 
+}
+
+.display {
+	display: block; 
+}
+.question { 
+	color: white;
+}
+
+.chosen { 
+	@extends.question;
+	color:brown;
+}
+
+.done { 
+	@extends.chosen;
+	color:grey;
+}
+
+h1 {
+	color: grey;
+	font-size: 30px;
+	font-family: verdana;
+	text-align: left;
+}
+
+#date {
+	text-align: left;
+	color: white;
+}
+
+p.p1{
+	text-align: left;
+	margin-left:35%;
+	color: white;
+	font-size: 25px;
+}
+
+p.p2 {
+	text-align: left;
+	margin-left:35%;
+	color: white;
+	font-size: 20px;
+}
+
+p.p3{
+	color: brown;
+	font-size: 20px;
+	font-family: verdana;
+	text-align: left;
+}
+
+.p{
+	text-align: left;
+	margin-left:35%;
+	color: white;
+	font-size: 20px;
+}
+
+div.absolute {
+    position: absolute;
+    top:110px;
+	font-size: 20px;
+    margin-left:30%;
+	margin-bottom:5%;
+	color:yellow;
+}
+
+#myresult{
+	text-align: left;
+	font-size: 15px;
+	color: brown;
+}
+
+body{
+	background-size: cover;
+	background-image: url('../image/img4.jpg');
+	background-attachment: fixed;
+	background-position: center top, center bottom;
+	font-family: verdana;
+}
+
+div.whole {
+	width: 1024px;
+	height: 1024px;
+	padding: 100px;
+	background-color: transparent;
+	display: inline-block;
+	margin-top: 100px;
+	margin-bottom: 70px;
+	font-family: verdana;
+	font-size: 20px;
+	text-align:left; 
+	position:relative;
+	
+}
+
+div.result {
+	width: 1024px;	
+	padding: 100px;
+	background-color: transparent;
+	display: inline-block;
+	margin-top: 100px;
+	margin-bottom: 70px;
+	font-family: verdana;
+	font-size: 24px;
+	text-align:left; 
+	position:relative;
+	
+}
+
+.img2{
+	float:left;
+	width: 350px;
+	height: 500px;
+}
